@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atributos input</title>
+</head>
+<h1>O que são atributos?</h1>
+<p>O elemento HTML < input > é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um < input > varia consideravelmente dependendo do valor de seu atributo type.</p>
+<body><H1>Atributo Pattern</H1>
+    <p>Uma expressão regular usada para validar o valor do controle. O padrão deve casar com o valor completo da entrada, não apenas uma parte. Use o atributo title para descrever o padrão para ajudar o usuário. Este atributo é aplicado quando o valor do atributo type é text, search, tel, url ou email; caso contrário ele é ignorado.<p>
+      <p>Digite sua senha, deve conter 8(oito) ou mais caracteres<p>
+        <form action="/action_page.php">
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" name="pwd"
+          pattern=".{8,}" title="Oito ou mais caracteres"><br>
+          <input type="submit">
+        </form>
+        <h1>Atributo Placeholder</h1>
+        <p>Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha.</p>
+        <form>
+            <label for="phone">Insira seu telefone de contato:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="(81) 98765-4321"
+            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+          </form>
+          <input type="submit">
+          <h1>Atributo Readonly</h1>
+    <p>atributo readonly especifica o campo de entrada é somente leitura.
+
+Campo somente leitura não pode ser modificado. No entanto, os usuários ainda podem usar a tecla Tab para alternar para o campo, você também pode selecionar ou copiar o seu texto.</p>
+    <form>
+        <label for="fname">Primeiro nome:</label><br>
+        <input type="text" id="fname" name="fname" value="Ivan" readonly><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" value="Honorato" readonly>
+      </form>
+      <h1>Atributo Size</h1>
+    <p>O tamanho inicial do controle. Este valor é em pixels a não ser que o valor do atributo type seja text ou password. Neste caso, este valor é um número inteiro de caracteres.</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="20"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="password" id="pin" name="pin" size="6">
+      </form>
+      <h1>Atributo Required</h1>
+      <p>Este atributo especifica que o usuário deve preencher o campo com um valor antes de enviar o formulário</p>
+      <form>
+          <p>Insira seus dados</p><br>
+          <label for="Usuário">Usuário:</label>
+          <input type="text" id="Usuário" name="Usuário" required>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+        <button type="button">Enviar</button>
+        </form>
+        <h1>Atributo Size</h1>
+    <p>O tamanho inicial do controle. Este valor é em pixels a não ser que o valor do atributo type seja text ou password. Neste caso, este valor é um número inteiro de caracteres.</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="20"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="password" id="pin" name="pin" size="6">
+      </form>
+      <H1>Atributo Type</H1></br>
+  <p>Define o tipo de elemento que será reconhecido pelo navegador.</p>
+  
+    <p>Preencha com seus dados</p>
+    <form>
+    <label for="fname">Primeiro nome:</label><br>
+    <input type="text" id="fname" name="fname" value="José"><br>
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lname" value="da Silva">
+</form><br>
+<fieldset>
+    <legend>Choose your monster's features:</legend size=80>
+
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked>
+      <label for="scales">Scales</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="horns">Horns</label>
+    </div>
+
+
+</body>
+<input type="radio" name="Escolha esse aqui" value="Escolha esse aqui"> Selecione aqui<br>
+</fieldset><br>
+<input type="date" name="Data de hoje" value="Data de hoje"><br>
+<br>
+<input type="password" name="senha" value="senha"><br>
+<h1>Atributo Value</h1>
+<p>Nos inputs text o value é o que a pessoa digita, nos checks e radios são nomes que nós colocamos para fazer sentido quando recebermos essa informação na outra ponta.</p>
+<form>
+    <p>Escolha um:</p>
+    <input type="radio" id="fname" name="fname" value="Azul">Azul<br>
+    <input type="radio" id="lname" name="lname" value="Vermelho">Vernelho<br>
+    <input type="submit">
+  </form>
+    
+</body>
+</html>
