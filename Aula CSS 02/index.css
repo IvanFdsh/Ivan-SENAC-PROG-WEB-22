@@ -1,0 +1,32 @@
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(176, 137, 90);
+}
+
+.classe1 {
+    background-color: rgb(220, 101, 101);
+    width: 300px;
+    border: 15px solid rgb(74, 25, 34);
+    padding: 50px;
+    margin: 20px;
+}
+
+.classe3 {
+    background-color: rgb(220, 101, 101);
+    width: 300px;
+    border: 15px solid rgb(74, 25, 34);
+    padding: 50px;
+    margin: 20px;
+    outline-style: double;
+}
