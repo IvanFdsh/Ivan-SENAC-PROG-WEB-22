@@ -1,0 +1,40 @@
+h1 {
+    font-size: 60px;
+    font-family: Shadows Into Light, cursive;
+    text-align: center;
+    border: 5px solid black;
+    text-shadow: 1px 1px 1px olive, 2px 2px 1px olive;
+    font-weight: 700;
+    background-color:saddlebrown;
+    width: 100%;
+}
+
+.logoprincipal {
+    display: block;
+    margin: 0 auto;
+}
+
+.nike {
+    display:inline-block
+        
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 10px double brown;
+
+} 
+
+li {
+
+    font-size: 20px;
+    font-family: Shadows Into Light, cursive;
+    
+}
+
+p {
+    font-size: 25px;
+    font-family: Shadow Into Light, cursive;
+}
