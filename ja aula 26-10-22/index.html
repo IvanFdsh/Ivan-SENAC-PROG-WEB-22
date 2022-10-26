@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <link rel="stylesheet" href="csstyle.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Somando online - Apenas somas kk</h1><br>
+    <input type="number" name="nmbr1" id="nmbr1"> +
+    <input type="number" name="nmbr2" id="nmbr2">
+    <input type="button" value="Somar" onclick="somar()"><br><br>
+    <div id="rslt">Resultado:</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('nmbr1')
+            var tn2 = document.querySelector('input#nmbr2')
+            var rslt = document.getElementById('rslt')
+            var n1 = Number.parseInt(nmbr1.value)
+            var n2 = Number(nmbr2.value)
+            var soma = n1 + n2
+
+            rslt.innerHTML = `A soma entre ${n1} e ${n2} è igual a <strong>${soma}<strong/>.`
+        }
+        
+    </script>
+    </div>
+    
+
+</body>
+</html>
