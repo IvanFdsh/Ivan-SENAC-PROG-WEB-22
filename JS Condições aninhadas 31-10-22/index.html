@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS condições aninhadas</title>
+    <!--script src="script.js" type="txt/javascript"></!--script-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <form>
+        <h1>Concorra ao nosso sorteio!</h1>
+        <p>Insira abaixo seus dados e participe</p>
+        <div>
+            <label for=" nome">Nome:</label>
+            <input type="text" id="nome" />
+        </div>
+        <div>
+            <label for="idade">Email:</label>
+            <input type="email" id="email" />
+            <div>
+                <label for="codigo">Código resgatado:</label>
+                <input type="text" id="codigo" />
+            </div><br>
+            <input type="button" id=" button" value="Participar" onclick="resultado()" /><br>
+            <div id="resultado"> </div>
+
+    </form>
+    <!--script>
+        var idade = prompt("qual é a sua idade?");
+
+        if (idade < 16) {
+            alert('Não vota');
+        } else if (idade < 18 || idade > 65) {
+            alert('Voto opcional');
+        } else {
+            alert('Voto obrigatório');
+        }
+
+    </!script-->
+    <script>
+        function resultado() {
+
+            var cod = document.getElementById('codigo')
+            var result = document.getElementById(`resultado`)
+
+
+
+            if (cod == 325476) { result.innerHTML = ('Você <strong>ganhou!</strong'); }
+            else { result.innerHTML = ('Que pena, não foi dessa vez'); }
+
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
