@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem regressiva data</title>
+
+</head>
+
+<body>
+    <h1>Saiba quanto tempo falta para o seu <strong>Aniversario!</strong></h1>
+    <form name="form_main">
+        <label for="numero">Data:</label>
+        <input name='date_end' type="date" onblur="resetCountdown()" />
+        <br>
+    </form>
+    <div class="container">
+        <h1>Contagem regressiva até a data selecionada:</h1>
+        <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
