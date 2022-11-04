@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Programa Atividade</title>
+</head>
+
+<body>
+    <h1>Cárdapio</h1><br>
+
+    <p>Selecione o seu combo:</p>
+
+    <label for="comida">Selecione sua comida: </label>
+    <select name="comida" id="comida">
+        <option value="Coxinha">Coxinha</option>
+        <option value="Pastel">Pastel</option>
+        <option value="Hamburguer">Hamburguer</option>
+        <option value="Cachorro-quente">Cachorro-quente</option>
+    </select><br>
+    <label for="bebida">Selecione sua bebida: </label><br>
+
+    <select name="bebida" id="bebida">
+        <option value="Refrigerante">Refrigerante</option>
+        <option value="Suco">Suco</option>
+        <option value="Água">Água</option>
+        <option value="Água com gás">Água com gás</option>
+        <option value="Cerveja">Cerveja</option>
+    </select><br><br>
+    <label for="acomp">Selecione seu acompanhamento: </label><br>
+
+    <select name="acomp" id="acomp">
+        <option value="Batata frita">Batata frita</option>
+        <option value="Batata rústica">Batata rústica</option>
+        <option value="Macaxeira frita">Macaxeira frita</option>
+        <option value="Salada">Salada</option>
+        <option value="Nuggets">Nuggets</option>
+    </select><br><br>
+
+    <section id="comboescolhido">O combo escolhido aparecerá aqui...</section>
+<script>
+    var comida = document.getElementById('comida')
+var bebida = document.getElementById('bebida')
+var acomp = document.getElementById('acomp')
+var combo = document.getElementById('comboescolhido').innerHTML("Voce escolheu" + ${comida} + "," +${bebida} "e" + ${acomp} + "para lanchar. Tenha uma boa refeicao!" )
+
+switch (comida) {
+    case 'Coxinha':
+        document.write('Preco R$4,50')
+        break
+    case 'Pastel':
+        document.write("Preco R$6,00")
+        break
+    case 'Hamburguer':
+        document.write("Preco R$9,00")
+        break
+    case 'Cachorro-quente':
+        document.write("Preco R$7,00")
+        break
+    default:
+        document.write("Comida escolhida")
+}
+
+switch (bebida) {
+    case 'Refrigerante':
+        document.write('Preco R$4,00')
+        break
+    case 'Suco':
+        document.write("Preco R$5,00")
+        break
+    case 'Água':
+        document.write("Preco R$2,00")
+        break
+    case 'Água com gás':
+        document.write("Preco R$3,00")
+        break
+    case 'Cerveja':
+        document.write("Preco R$6,00")
+        break
+    default:
+        document.write("Bebida escolhida")
+}
+
+switch (acomp) {
+    case 'Batata frita':
+        document.write('Preco R$8,00')
+        break
+    case 'Batata rústica':
+        document.write("Preco R$9,00")
+        break
+    case 'Macaxeira frita':
+        document.write("Preco R$8,00")
+        break
+    case 'Salada':
+        document.write("Preco R$6,00")
+        break
+        case 'Nuggets':
+        document.write("Preco R$7,00")
+        break
+    default:
+        document.write("Acompanhamento escolhido")
+}
+</script>
+
+</body>
+
+</html>
