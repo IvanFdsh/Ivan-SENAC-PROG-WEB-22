@@ -1,0 +1,22 @@
+*{
+    margin: 20px;
+}
+
+.box1 {
+    border: 2px solid red;
+    background-color: red;
+}
+.box2 {
+    border: 2px solid yellow;
+    background-color: yellow;
+}
+.box3 {
+    border: 2px solid pink;
+    background-color: pink;
+}
+
+@media screen and (max-width: 600px) {
+    .box1 {
+        background-color: blue;
+    }
+}

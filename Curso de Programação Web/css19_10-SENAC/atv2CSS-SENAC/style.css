@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.nav1 {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav1Right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav1Left {
+    width: 40%;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logoDell {
+    width: 35%;
+}
+
+.divPesquisa {
+    position: relative;
+}
+
+.divPesquisa1 {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}
+
+#pesquisa {
+    width: 420px;
+    height: 30px;
+    border-radius: 2.5em;
+    background-color: transparent;
+}
+
+.lupa {
+    width: 15px;
+}
+
+.iconsNav1 {
+    width: 15px;
+    padding-right: 8px;
+}
+
+.buttonNav1,
+.buttonRNav1 {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.buttonNav1:hover,
+.buttonRNav1:hover {
+    background-color: #d2d2d291;
+}
+
+.buttonRNav1 {
+    margin-right: 20px;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.iconsNav2 {
+    width: 15px;
+}
+
+.navDiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonNav2 {
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.buttonNav2:hover {
+    background-color: #d2d2d291;
+    transition-delay: 100ms;
+}
